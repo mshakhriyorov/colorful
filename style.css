@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    background: #161616;
+}
+
+.text {
+    max-width: 100%;
+    z-index: 1;
+    color: #fff;
+    font-family: "Roboto mono", monospace;
+    font-size: 100px;
+    font-weight: 200;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.2));
+}
+
+.text span:nth-child(1) {
+    color: #4285f4;
+    animation: animText 0.3s ease-in-out infinite;
+}
+
+.text span:nth-child(2) {
+    color: #F0FB07;
+    animation: animText 0.3s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+.text span:nth-child(3) {
+    color: #F11907;
+    animation: animText 0.3s ease-in-out infinite;
+    animation-delay: 1.2s;
+}
+
+.text span:nth-child(4) {
+    color: #5CF107;
+    animation: animText 0.3s ease-in-out infinite;
+    animation-delay: 1.6s;
+}
+
+@keyframes animText {
+    0% {
+        font-weight: 200;
+    }
+
+    50% {
+        font-weight: 900;
+    }
+
+    100% {
+        font-weight: 200;
+    }
+}
+
+
+.text span:nth-child(5) {
+    color: #232c79;
+    font-weight: 900;
+    animation: animMark 0.3s ease-in-out infinite;
+}
+
+
+@keyframes animMark{
+    0%{
+        transform: rotate(30deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(30deg);
+    }
+}
+
+.stars-01{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    box-shadow: 200px 100px red, 400px 300px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 400px 800px #df1a1a, 600px 700px #11eb40, 500px 200px #202524 , 300px 400px #f3f7f6, 200px 100px rgba(255, 0, 0, 0.116), 400px 300px white,  300px 200px #d6fc04, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 400px 800px #154d14, 600px 700px #2BF0C0, 500px 200px #2BF0C0 , 300px 400px #2BF0C0,200px 100px red, 400px 300px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 600px 800px #2BF0C0, 600px 700px #2BF0C0, 500px 200px #2BF0C0 , 300px 400px #2BF0C0,200px 100px rgb(243, 140, 140), 500px 300px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 300px 900px #2BF0C0, 600px 700px #2BF0C0, 500px 700px #2ba8f0 , 600px 400px #2BF0C0,500px 100px red, 100px 300px white,  500px 200px #1f1979, 900px 400px #616463, 200px 600px #2BF0C0 , 900px 200px #2BF0C0, 100px 800px #2BF0C0, 700px 700px #2BF0C0, 500px 400px #2BF0C0 , 300px 600px #2BF0C0,200px 100px red, 200px 600px white,  900px 200px #1f1979, 200px 900px #616463, 900px 900px #c6c90b , 800px 800px #2BF0C0, 400px 500px #662bf0, 600px 900px #2BF0C0, 300px 800px #2BF0C0 , 700px 500px #2BF0C0,  900px 100px red, 800px 300px white,  900px 200px #1f1979, 700px 200px #616463, 900px 300px #2BF0C0 , 800px 200px #2BF0C0, 900px 800px #df1a1a, 600px 700px #11eb40, 900px 200px #202524 , 900px 400px #f3f7f6, 800px 100px rgba(255, 0, 0, 0.116), 900px 300px white,  800px 200px #d6fc04, 900px 200px #616463, 900px 300px #2BF0C0 , 800px 200px #2BF0C0, 900px 800px #154d14, 600px 700px #2BF0C0, 800px 200px #2BF0C0 , 860px 400px #2BF0C0,780px 100px red, 860px 300px white,  540px 200px #1f1979, 990px 200px #616463, 880px 300px #2BF0C0 , 1000px 200px #2BF0C0, 880px 800px #2BF0C0, 690px 700px #2BF0C0, 8890px 200px #2BF0C0 , 1200px 400px #2BF0C0,200px 900px rgb(243, 140, 140), 500px 900px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 300px 870px #2BF0C0, 600px 980px #2BF0C0, 500px 990px #2ba8f0 , 600px 700px #2BF0C0,500px 990px red, 100px 370px white,  500px 780px #1f1979, 900px 400px #616463, 200px 600px #2BF0C0 , 900px 200px #2BF0C0, 100px 800px #2BF0C0, 700px 990px #2BF0C0, 500px 900px #2BF0C0 , 300px 600px #2BF0C0,200px 100px red, 200px 600px white,  900px 200px #1f1979, 990px 900px #616463, 900px 900px #c6c90b , 800px 800px #2BF0C0, 400px 500px #662bf0, 600px 900px #2BF0C0, 780px 800px #2BF0C0 , 700px 870px #2BF0C0;
+    animation: starsup 5s linear infinite;
+}
+
+
+.stars-02{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    box-shadow: 200px 100px red, 400px 300px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 400px 800px #df1a1a, 600px 700px #11eb40, 500px 200px #202524 , 300px 400px #f3f7f6, 200px 100px rgba(255, 0, 0, 0.116), 400px 300px white,  300px 200px #d6fc04, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 400px 800px #154d14, 600px 700px #2BF0C0, 500px 200px #2BF0C0 , 300px 400px #2BF0C0,200px 100px red, 400px 300px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 600px 800px #2BF0C0, 600px 700px #2BF0C0, 500px 200px #2BF0C0 , 300px 400px #2BF0C0,200px 100px rgb(243, 140, 140), 500px 300px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 300px 900px #2BF0C0, 600px 700px #2BF0C0, 500px 700px #2ba8f0 , 600px 400px #2BF0C0,500px 100px red, 100px 300px white,  500px 200px #1f1979, 900px 400px #616463, 200px 600px #2BF0C0 , 900px 200px #2BF0C0, 100px 800px #2BF0C0, 700px 700px #2BF0C0, 500px 400px #2BF0C0 , 300px 600px #2BF0C0,200px 100px red, 200px 600px white,  900px 200px #1f1979, 200px 900px #616463, 900px 900px #c6c90b , 800px 800px #2BF0C0, 400px 500px #662bf0, 600px 900px #2BF0C0, 300px 800px #2BF0C0 , 700px 500px #2BF0C0,  900px 100px red, 800px 300px white,  900px 200px #1f1979, 700px 200px #616463, 900px 300px #2BF0C0 , 800px 200px #2BF0C0, 900px 800px #df1a1a, 600px 700px #11eb40, 900px 200px #202524 , 900px 400px #f3f7f6, 800px 100px rgba(255, 0, 0, 0.116), 900px 300px white,  800px 200px #d6fc04, 900px 200px #616463, 900px 300px #2BF0C0 , 800px 200px #2BF0C0, 900px 800px #154d14, 600px 700px #2BF0C0, 800px 200px #2BF0C0 , 860px 400px #2BF0C0,780px 100px red, 860px 300px white,  540px 200px #1f1979, 990px 200px #616463, 880px 300px #2BF0C0 , 1000px 200px #2BF0C0, 880px 800px #2BF0C0, 690px 700px #2BF0C0, 8890px 200px #2BF0C0 , 1200px 400px #2BF0C0,200px 900px rgb(243, 140, 140), 500px 900px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 300px 870px #2BF0C0, 600px 980px #2BF0C0, 500px 990px #2ba8f0 , 600px 700px #2BF0C0,500px 990px red, 100px 370px white,  500px 780px #1f1979, 900px 400px #616463, 200px 600px #2BF0C0 , 900px 200px #2BF0C0, 100px 800px #2BF0C0, 700px 990px #2BF0C0, 500px 900px #2BF0C0 , 300px 600px #2BF0C0,200px 100px red, 200px 600px white,  900px 200px #1f1979, 990px 900px #616463, 900px 900px #c6c90b , 800px 800px #2BF0C0, 400px 500px #662bf0, 600px 900px #2BF0C0, 780px 800px #2BF0C0 , 700px 870px #2BF0C0 ;
+    animation: starsup 10s linear infinite;
+}
+
+.stars-03{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 70%;
+    box-shadow: 200px 100px red, 400px 300px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 400px 800px #df1a1a, 600px 700px #11eb40, 500px 200px #202524 , 300px 400px #f3f7f6, 200px 100px rgba(255, 0, 0, 0.116), 400px 300px white,  300px 200px #d6fc04, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 400px 800px #154d14, 600px 700px #2BF0C0, 500px 200px #2BF0C0 , 300px 400px #2BF0C0,200px 100px red, 400px 300px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 600px 800px #2BF0C0, 600px 700px #2BF0C0, 500px 200px #2BF0C0 , 300px 400px #2BF0C0,200px 100px rgb(243, 140, 140), 500px 300px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 300px 900px #2BF0C0, 600px 700px #2BF0C0, 500px 700px #2ba8f0 , 600px 400px #2BF0C0,500px 100px red, 100px 300px white,  500px 200px #1f1979, 900px 400px #616463, 200px 600px #2BF0C0 , 900px 200px #2BF0C0, 100px 800px #2BF0C0, 700px 700px #2BF0C0, 500px 400px #2BF0C0 , 300px 600px #2BF0C0,200px 100px red, 200px 600px white,  900px 200px #1f1979, 200px 900px #616463, 900px 900px #c6c90b , 800px 800px #2BF0C0, 400px 500px #662bf0, 600px 900px #2BF0C0, 300px 800px #2BF0C0 , 700px 500px #2BF0C0,  900px 100px red, 800px 300px white,  900px 200px #1f1979, 700px 200px #616463, 900px 300px #2BF0C0 , 800px 200px #2BF0C0, 900px 800px #df1a1a, 600px 700px #11eb40, 900px 200px #202524 , 900px 400px #f3f7f6, 800px 100px rgba(255, 0, 0, 0.116), 900px 300px white,  800px 200px #d6fc04, 900px 200px #616463, 900px 300px #2BF0C0 , 800px 200px #2BF0C0, 900px 800px #154d14, 600px 700px #2BF0C0, 800px 200px #2BF0C0 , 860px 400px #2BF0C0,780px 100px red, 860px 300px white,  540px 200px #1f1979, 990px 200px #616463, 880px 300px #2BF0C0 , 1000px 200px #2BF0C0, 880px 800px #2BF0C0, 690px 700px #2BF0C0, 8890px 200px #2BF0C0 , 1200px 400px #2BF0C0,200px 900px rgb(243, 140, 140), 500px 900px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 300px 870px #2BF0C0, 600px 980px #2BF0C0, 500px 990px #2ba8f0 , 600px 700px #2BF0C0,500px 990px red, 100px 370px white,  500px 780px #1f1979, 900px 400px #616463, 200px 600px #2BF0C0 , 900px 200px #2BF0C0, 100px 800px #2BF0C0, 700px 990px #2BF0C0, 500px 900px #2BF0C0 , 300px 600px #2BF0C0,200px 100px red, 200px 600px white,  900px 200px #1f1979, 990px 900px #616463, 900px 900px #c6c90b , 800px 800px #2BF0C0, 400px 500px #662bf0, 600px 900px #2BF0C0, 780px 800px #2BF0C0 , 700px 870px #2BF0C0 ;
+    animation: starsup 20s linear infinite;
+    
+}
+.stars-04{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 90%;
+    box-shadow: 200px 100px red, 400px 300px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 400px 800px #df1a1a, 600px 700px #11eb40, 500px 200px #202524 , 300px 400px #f3f7f6, 200px 100px rgba(255, 0, 0, 0.116), 400px 300px white,  300px 200px #d6fc04, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 400px 800px #154d14, 600px 700px #2BF0C0, 500px 200px #2BF0C0 , 300px 400px #2BF0C0,200px 100px red, 400px 300px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 600px 800px #2BF0C0, 600px 700px #2BF0C0, 500px 200px #2BF0C0 , 300px 400px #2BF0C0,200px 100px rgb(243, 140, 140), 500px 300px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 300px 900px #2BF0C0, 600px 700px #2BF0C0, 500px 700px #2ba8f0 , 600px 400px #2BF0C0,500px 100px red, 100px 300px white,  500px 200px #1f1979, 900px 400px #616463, 200px 600px #2BF0C0 , 900px 200px #2BF0C0, 100px 800px #2BF0C0, 700px 700px #2BF0C0, 500px 400px #2BF0C0 , 300px 600px #2BF0C0,200px 100px red, 200px 600px white,  900px 200px #1f1979, 200px 900px #616463, 900px 900px #c6c90b , 800px 800px #2BF0C0, 400px 500px #662bf0, 600px 900px #2BF0C0, 300px 800px #2BF0C0 , 700px 500px #2BF0C0,  900px 100px red, 800px 300px white,  900px 200px #1f1979, 700px 200px #616463, 900px 300px #2BF0C0 , 800px 200px #2BF0C0, 900px 800px #df1a1a, 600px 700px #11eb40, 900px 200px #202524 , 900px 400px #f3f7f6, 800px 100px rgba(255, 0, 0, 0.116), 900px 300px white,  800px 200px #d6fc04, 900px 200px #616463, 900px 300px #2BF0C0 , 800px 200px #2BF0C0, 900px 800px #154d14, 600px 700px #2BF0C0, 800px 200px #2BF0C0 , 860px 400px #2BF0C0,780px 100px red, 860px 300px white,  540px 200px #1f1979, 990px 200px #616463, 880px 300px #2BF0C0 , 1000px 200px #2BF0C0, 880px 800px #2BF0C0, 690px 700px #2BF0C0, 8890px 200px #2BF0C0 , 1200px 400px #2BF0C0,200px 900px rgb(243, 140, 140), 500px 900px white,  300px 200px #1f1979, 200px 200px #616463, 300px 300px #2BF0C0 , 400px 200px #2BF0C0, 300px 870px #2BF0C0, 600px 980px #2BF0C0, 500px 990px #2ba8f0 , 600px 700px #2BF0C0,500px 990px red, 100px 370px white,  500px 780px #1f1979, 900px 400px #616463, 200px 600px #2BF0C0 , 900px 200px #2BF0C0, 100px 800px #2BF0C0, 700px 990px #2BF0C0, 500px 900px #2BF0C0 , 300px 600px #2BF0C0,200px 100px red, 200px 600px white,  900px 200px #1f1979, 990px 900px #616463, 900px 900px #c6c90b , 800px 800px #2BF0C0, 400px 500px #662bf0, 600px 900px #2BF0C0, 780px 800px #2BF0C0 , 700px 870px #2BF0C0 ;
+    animation: starsup 30s linear infinite;
+}
+
+
+@keyframes starsup {
+    0%{
+        transform: translateY(500px);
+    }
+
+    100%{
+        transform: translateY(-2000px);
+    }
+}
