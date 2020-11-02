@@ -6,6 +6,12 @@
     overflow: hidden;
 }
 
+html, body{
+    overflow-y: hidden;
+}
+
+
+
 body {
     height: 100vh;
     background: #161616;
