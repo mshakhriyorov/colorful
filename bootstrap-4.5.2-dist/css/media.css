@@ -1,0 +1,15 @@
+
+
+@media screen and (max-width:576px){
+    body > .container > .row > .text > span{
+        font-size: 63px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:400px){
+    body > .container > .row > .text > span{
+        font-size: 45px;
+        text-align: center;
+    }
+}
